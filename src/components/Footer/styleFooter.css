@@ -1,0 +1,31 @@
+.container-footer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* height: 7vh; */
+    background: var(--primary-color);
+    color: white;
+    gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color-sigle {
+    color: aqua;
+}

@@ -1,0 +1,140 @@
+.dad-HardSkills {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    color: white;
+    /* opacity: 0; */
+}
+
+.title-hardSkills {
+    color: white;
+    text-align: center;
+    margin-top: 15rem ;
+    font-size: 2em;
+}
+
+
+
+
+.container_hardSkills {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* grid-template-columns: 1fr 1fr; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    color: white;
+}
+
+
+.hardSkill__Javascript {
+    width: 277px;
+    height: 52vh;
+    /* max-height: 75vh; */
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgba(36, 36, 36, 0.411);
+    box-shadow:  5px 5px 10px #1b7a76,
+             -5px -5px 10px #313131;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.hardSkill__Javascript p {
+    color: rgb(217, 255, 0);
+    padding: .7rem 0;
+}
+.hardSkill__React {
+    width: 277px;
+    height: 52vh;
+    /* max-height: 75vh; */
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgba(36, 36, 36, 0.411);
+    box-shadow:  5px 5px 10px #1b7a76,
+             -5px -5px 10px #313131;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.hardSkill__React p{
+    color: rgb(0, 255, 255);
+    padding: .7rem 0;
+}
+.hardSkill__Angular {
+    width: 277px;
+    height: 52vh;
+    /* max-height: 75vh; */
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgba(36, 36, 36, 0.411);
+    box-shadow:  5px 5px 10px #1b7a76,
+             -5px -5px 10px #313131;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 1rem;
+}
+
+.hardSkill__Angular p{
+    color: rgb(255, 17, 0);
+    padding: .7rem 0;
+}
+.hardSkill__NodeJs {
+    width: 277px;
+    height: 52vh;
+    /* max-height: 75vh; */
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgba(36, 36, 36, 0.411);
+    box-shadow: 5px 5px 10px #1b7a76,
+    -5px -5px 10px #313131;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 1rem;
+}
+
+
+.gp-img-skills {
+    width: 40%;
+}
+
+
+.gp-description-skills {
+    font-size: 1em;
+}
+
+.hardSkill__NodeJs p{
+    color: rgb(4, 143, 34);
+    padding: .7rem 0;
+}
+
+.hardSkill__Javascript,
+.hardSkill__React,
+.hardSkill__Angular,
+.hardSkill__NodeJs span{
+    text-align: center;
+    padding: auto 10px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+.hardSkill__Javascript:hover,
+.hardSkill__React:hover,
+.hardSkill__Angular:hover,
+.hardSkill__NodeJs:hover {
+    box-shadow: 3px 3px 35px rgb(17, 84, 88);
+}
+
+
+
+
+/* RESPONSIVIDADE  */
+

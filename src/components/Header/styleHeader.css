@@ -1,0 +1,52 @@
+.container__nav {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    /* background: transparent; */
+    color: white;
+    z-index: 2;
+    box-shadow: 0px 4px 5px rgba(0, 181, 253, 0.1);
+}
+
+
+
+/* CÓDGIO PARA QUANDO TIVER UM SCROLL A BARRA FICAR PRETA */
+
+
+
+
+.list__navegacao {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+
+}
+
+.gp-links {
+    color: #21697A;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+    font-size: 1rem;
+}
+
+.gp-links:hover {
+    color: #0fafd3;
+}
+
+
+h1 {
+    color: #21697A;
+    font-size: 1.5rem;
+}
+
+
+
+.img-nav {
+    width: 4rem;
+}
