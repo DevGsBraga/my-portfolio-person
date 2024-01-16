@@ -31,17 +31,18 @@ const MyForm = () => {
             <form onSubmit={handleSubmit}>
             <label>
                 Nome:
-                <input type="text" name="nome" required />
+                <input type="text" className='gp-input' name="nome" required />
             </label>
             <br />
             <label>
                 Email:
-                <input type="email" name="email" required />
+                <input type="email" className='gp-input' name="email" required />
             </label>
             <br />
             <label>
                 Mensagem:
-                <textarea name="mensagem" required />
+                <br /><br />
+                <textarea name="mensagem" className='gp-input-msg' required />
             </label>
             <br />
             <button type="submit">Enviar</button>

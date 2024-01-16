@@ -5,15 +5,38 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .form-description {
     width: 50%;
-    height: 400px;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: #ccc;
+    background: rgba(32, 32, 32, 0.356);
+}
+
+.gp-input {
+    width: 43rem;
+    height: 2rem;
+    background: transparent;
+    border: none ;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 1rem;
+}
+
+.gp-input-msg {
+    width: 43rem;
+    height: 7rem;
+    background: transparent;
+    border: none ;
+    border: 1px solid #cccccc;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    margin: 0 auto;
+    color: white;
+    padding: .8rem;
 }

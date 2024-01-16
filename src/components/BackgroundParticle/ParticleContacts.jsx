@@ -24,7 +24,7 @@ export const ParticlePContacts = () => {
       () => ({
         background: {
           color: {
-            value: "#001224",
+            value: "#000000",
 
           },
         },
@@ -36,7 +36,7 @@ export const ParticlePContacts = () => {
               mode: "push",
             },
             onHover: {
-              enable: true,
+              enable: false,
               mode: "repulse",
             },
           },
@@ -52,10 +52,10 @@ export const ParticlePContacts = () => {
         },
         particles: {
           color: {
-            value: "#000000",
+            value: "#ee82ee",
           },
           links: {
-            color: "#ffcc00",
+            color: "#21697A",
             distance: 200,
             enable: true,
             opacity: 0.5,
