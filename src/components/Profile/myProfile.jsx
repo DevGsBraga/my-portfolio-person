@@ -68,7 +68,7 @@ function ContainerProfile() {
                 <p className='my-description' ref={animationPRef}>Sou um entusiasta da programação em constante evolução, focado no universo do Desenvolvimento Front-end. <br /><br /> Ao longo dos últimos 9 meses, mergulhei nos estudos, especialmente em React e Javascript, e adquiri habilidades sólidas em diversas tecnologias, como React, Angular, Typescript, HTML, CSS, Bootstrap, Git, GitHub, Node.js, API Rest e Responsividade. <br /><br />
                 Minha jornada incluiu uma experiência de quatro meses como Freelancer, onde tive o prazer de entregar soluções não apenas eficazes, mas também visualmente atraentes. Sou movido pela proatividade, comunicação efetiva, capacidade de adaptação e um compromisso sólido com prazos e entregas.</p>
                 <div className='cv-redes-socias'>
-                <Button title={'Download CV'}></Button>
+                <Button title={'Download CV'} link={'https://docs.google.com/document/d/10PgXk3cNKuewCwUQtThUlB3EntL5lfwQxgOccJexG3U/edit?usp=drive_link'}></Button>
                 <div className='redes'>
                 <Link ref={animationGitRef} className='link-redes1' to={'https://github.com/DevGsBraga?tab=repositories'} target='_blank'>
                     <FaGithub size={30} color='#22B2A9' />
