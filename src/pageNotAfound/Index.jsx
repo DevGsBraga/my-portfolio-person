@@ -1,4 +1,4 @@
-import './styleindex.css';
+import './styleIndex.css';
 import imgCat from '../assets/img/cat-error.png';
 
 import { Link } from "react-router-dom"
