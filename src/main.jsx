@@ -12,6 +12,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Home } from './pages/Home.jsx';
 import { Projects } from './pages/Projects.jsx';
 import { Contacts } from './pages/Contacts.jsx';
+import { PageNot } from './pageNotAfound/Index.jsx';
 
 
 const meuRoteamento = createBrowserRouter([
@@ -30,6 +31,9 @@ const meuRoteamento = createBrowserRouter([
       {
         path: '/contacts',
         element: <Contacts />
+      }, {
+        path: '*',
+        element: <PageNot />
       }
     ]
   }

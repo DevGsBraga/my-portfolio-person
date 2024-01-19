@@ -43,6 +43,7 @@
 .hardSkill__Javascript {
     width: 277px;
     height: 52vh;
+
     /* max-height: 75vh; */
     padding: .7rem;
     text-align: center;
@@ -58,10 +59,12 @@
     color: #d9ff00;
     padding: .7rem 0;
     font-weight: bold;
+    font-size: 1.2em;
 }
 .hardSkill__React {
     width: 277px;
     height: 52vh;
+
     /* max-height: 75vh; */
     padding: .7rem;
     text-align: center;
@@ -77,10 +80,12 @@
     color: rgb(0, 255, 255);
     padding: .7rem 0;
     font-weight: bold;
+    font-size: 1.2em;
 }
 .hardSkill__Angular {
     width: 277px;
     height: 52vh;
+
     /* max-height: 75vh; */
     padding: .7rem;
     text-align: center;
@@ -97,10 +102,12 @@
     color: rgb(255, 17, 0);
     padding: .7rem 0;
     font-weight: bold;
+    font-size: 1.2em;
 }
 .hardSkill__NodeJs {
     width: 277px;
     height: 52vh;
+
     /* max-height: 75vh; */
     padding: .7rem;
     text-align: center;
@@ -121,6 +128,7 @@
     color: rgb(4, 143, 34);
     padding: .7rem 0;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .hardSkill__Javascript,
@@ -160,4 +168,66 @@
 
 
 /* RESPONSIVIDADE  */
+
+@media (max-width: 1768px) {
+
+}
+
+@media (max-width: 1024px) {
+
+    .hardSkill__Javascript,
+    .hardSkill__React,
+    .hardSkill__Angular,
+    .hardSkill__NodeJs {
+        max-height: 35vh;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .hardSkill__Javascript,
+    .hardSkill__React,
+    .hardSkill__Angular,
+    .hardSkill__NodeJs {
+        max-height: 40vh;
+        font-size: .8em;
+    }
+    .gp-icons {
+        width: 84px;
+    }
+
+}
+
+@media (max-width: 428px) {
+    .hardSkill__Javascript,
+    .hardSkill__React,
+    .hardSkill__Angular,
+    .hardSkill__NodeJs {
+        max-height: 20rem;
+        padding: 0;
+        font-size: .9em;
+    }
+    .gp-icons {
+        width: 84px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .hardSkill__Javascript,
+    .hardSkill__React,
+    .hardSkill__Angular,
+    .hardSkill__NodeJs {
+        max-height: 20rem;
+        padding: 0;
+        font-size: .8em;
+    }
+
+    .gp-icons {
+        width: 84px;
+    }
+
+}
 

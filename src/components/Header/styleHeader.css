@@ -64,13 +64,14 @@ h1 {
 
 @media (max-width: 428px) {
     .list__navegacao {
-        margin-top: -1rem;
+        margin-top: -1.2rem;
     }
     .nav-title {
         margin: .9rem;
     }
     .img-nav {
         max-width: 3rem;
+        margin: .8rem;
     }
 }
 

@@ -1,7 +1,7 @@
 // MEU CSS
 import './styleProfile.css';
 
-import ImgProfile from '../../assets/img/my-photo-teste.png';
+import ImgProfile from '../../assets/img/my-portfolio-img.png';
 import  Button  from '../Buttons/Button';
 
 // ICONS
@@ -69,6 +69,7 @@ function ContainerProfile() {
                 Minha jornada incluiu uma experiência de quatro meses como Freelancer, onde tive o prazer de entregar soluções não apenas eficazes, mas também visualmente atraentes. Sou movido pela proatividade, comunicação efetiva, capacidade de adaptação e um compromisso sólido com prazos e entregas.</p>
                 <div className='cv-redes-socias'>
                 <Button title={'Download CV'}></Button>
+                <div className='redes'>
                 <Link ref={animationGitRef} className='link-redes1' to={'https://github.com/DevGsBraga?tab=repositories'} target='_blank'>
                     <FaGithub size={30} color='#22B2A9' />
                 </Link>
@@ -76,6 +77,8 @@ function ContainerProfile() {
                 <FaLinkedin size={30} color='#22B2A9'/>
 
                 </Link>
+
+                </div>
 
                 </div>
             </div>

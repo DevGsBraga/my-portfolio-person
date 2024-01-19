@@ -70,42 +70,29 @@ export const HardsSkills = () => {
         animarHardSkills(node, 200, -200,0,0, '.title-hardSkills', 1.3);
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
    <>
    <h2 className='title-hardSkills' ref={titleH2Ref}>Hard Skills</h2>
 <div className='dad-HardSkills'>
 <div className='container_hardSkills'>
   <div className='hardSkill__Javascript' ref={titleJavascriptRef}>
-      <IoLogoJavascript size={120} color='yellow' />
+      <IoLogoJavascript className='gp-icons' size={120} color='yellow' />
       <p>JavaScript</p>
       <span className='gp-description-skills'>Com sólido conhecimento em JavaScript, traduzo conceitos complexos em código coeso, oferecendo dinamismo e interatividade para otimizar a experiência do usuário na web.</span>
 
   </div>
   <div className='hardSkill__React' ref={titleReactRef}>
-    <FaReact size={120} color='#00FFFF' />
+    <FaReact className='gp-icons' size={120} color='#00FFFF' />
       <p>React</p>
       <span className='gp-description-skills'>Especializado em React, desenvolvo interfaces que combinam elegância e eficiência, proporcionando experiências visuais cativantes e funcionais. <br /><br /> Essa Page e esse Card foi desenvolvida em React</span>
   </div>
   <div className='hardSkill__Angular' ref={titleAngularRef}>
-    <FaAngular size={120} color='red' />
+    <FaAngular className='gp-icons' size={120} color='red' />
       <p>Angular 17</p>
       <span className='gp-description-skills'>Conhecedor do Angular, orquestro o desenvolvimento de aplicações complexas, unindo estrutura sólida e inovação para alcançar resultados excepcionais.</span>
   </div>
   <div className='hardSkill__NodeJs' ref={titleNodeRef}>
-    <FaNode size={120} color='green' />
+    <FaNode className='gp-icons' size={120} color='green' />
       <p>Node Js 20.0</p>
       <span className='gp-description-skills'>Conhecimento sólido em Node.js, construo servidores robustos que impulsionam aplicações, assegurando desempenho e eficiência notáveis em ambientes de produção.</span>
   </div>
