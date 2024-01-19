@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     margin: 2rem;
+    animation: identifier 2s ease-in-out;
 }
 
 
 .button {
     position: relative;
-    width: 120px;
-    height: 40px;
+    width: 7.5rem;
+    height: 2.5rem;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -35,8 +36,8 @@
     left: -4px;
     top: -1px;
     margin: auto;
-    width: 128px;
-    height: 48px;
+    width: 8rem;
+    height: 2.8rem;
     border-radius: 10px;
     background: linear-gradient(-45deg, #064e4e 0%, #40c9ff 100% );
     z-index: -10;
@@ -65,4 +66,38 @@
 .button:active::before {
     scale: 0.7;
   }
+
+  /* ANIMAÇÕES */
+
+  @keyframes identifier {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /* RESPONSIVIDADE */
+
+  @media (max-width: 768px) {
+    .container-button {
+      margin: .5;
+  }
+  }
+
+
+
+
+
+
+
+  @media (max-width: 320px) {
+    .button {
+      margin: -1rem 0;
+    }
+  }
+
+
 

@@ -57,13 +57,11 @@ const navRef = useRef(null);
 
     gsap.to(navElement, {
         backgroundColor: '#000000',
-        height: 50,
-        duration:0.1,
         scrollTrigger: {
           trigger: navElement,
           start: 'top top',
           end: 'bottom top',
-          scrub: 0.5,
+          scrub: 1,
         },
       });
     }, []);

@@ -49,4 +49,41 @@ h1 {
 
 .img-nav {
     width: 4rem;
+    height: auto;
 }
+
+
+@media (max-width: 768px) {
+    .list__navegacao {
+        margin-top: -1rem;
+    }
+    .img-nav {
+        max-width: 3rem;
+    }
+}
+
+@media (max-width: 428px) {
+    .list__navegacao {
+        margin-top: -1rem;
+    }
+    .nav-title {
+        margin: .9rem;
+    }
+    .img-nav {
+        max-width: 3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .list__navegacao {
+        margin-top: -1rem;
+    }
+    .img-nav {
+        max-width: 2rem;
+    }
+
+    .container__nav {
+        width: 100vw;
+    }
+}
+

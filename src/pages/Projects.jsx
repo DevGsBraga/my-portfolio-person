@@ -15,19 +15,15 @@ export const Projects = () => {
 
 
 
-
-
-
-
-
   return (
   <>
-    <ParticleProjects></ParticleProjects>
-  <div className="container-project1" style={{position: "relative", zIndex: 1}} >
     <NavBar></NavBar>
+    <ParticleProjects></ParticleProjects>
+    <div className="container-project1" style={{position: "relative", zIndex: 1}} >
     <CardProject ></CardProject>
     <CardProject2></CardProject2>
-  </div>
+    <h3 style={{color: 'white', textAlign: 'center', margin: '1rem'}}>Aguardem... Em breve novos projetos!</h3>
+    </div>
     </>
   )
 }

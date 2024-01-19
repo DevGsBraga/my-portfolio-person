@@ -1,42 +1,219 @@
 .container-form {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: white;
+    text-align: center;
 }
+
+
+.description-title {
+    margin: 3rem;
+
+}
+
 
 .form-description {
     width: 50%;
-    height: 80vh;
+    height: 70vh;
+    padding: 7rem 0;
+    background: #2e323396  ;
+    box-shadow:  9px 9px 33px #0a726948,
+    -9px -9px 33px #03737731;
+    border-radius: 1rem;
+    animation: containerOpacity 1s linear;
+}
+.forms {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background: rgba(32, 32, 32, 0.356);
+
 }
 
+.gp-input1,
 .gp-input {
-    width: 43rem;
-    height: 2rem;
-    background: transparent;
-    border: none ;
-    border-bottom: 1px solid #cccccc;
-    margin-bottom: 1rem;
+    width: 70%;
+    height: 6vh;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    -webkit-text-fill-color: #ffffffcb;
+    -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
+    outline: none;
 }
+
+
+
+.gp-input:-moz-placeholder {
+    color: #ffffff; /* Cor do texto */
+}
+
 
 .gp-input-msg {
-    width: 43rem;
-    height: 7rem;
-    background: transparent;
-    border: none ;
-    border: 1px solid #cccccc;
-    margin-bottom: 1rem;
+    width: 70%;
+    height: 20vh;
+    padding: 1rem;
     border-radius: 15px;
-    margin: 0 auto;
+    background-color: black;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
+    outline: none;
     color: white;
-    padding: .8rem;
+}
+
+.btn-3 {
+    background: rgb(10, 66, 88);
+    background: linear-gradient(45deg, var(--primary-color), rgb(4, 182, 236));
+    width: 20%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: #ffffff81;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: black;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: aqua;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+
+
+
+
+
+/* .btn-form {
+    width: 20%;
+    height: 15%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: rgb(185, 84, 84);
+}
+
+.btn-form:hover {
+    animation: widthFull 2s ease ;
+
+}
+
+
+@keyframes widthFull {
+    0% {
+        width: 0%;
+        background: 100%;
+    }
+    50% {
+        width: 50%;
+        background: 50%;
+    }
+    100% {
+        width: 100%;
+        background: 0%;
+    }
+} */
+
+
+/* RESPOSIVIDADE  */
+
+@media (max-width: 1024px) {
+    .form-description {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .form-description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 428px) {
+    .form-description {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .form-description {
+        width: 100%;
+    }
+    .form-description {
+        padding: 3rem 0;
+    }
+}
+
+
+@keyframes containerOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

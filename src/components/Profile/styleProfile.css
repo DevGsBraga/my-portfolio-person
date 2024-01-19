@@ -22,6 +22,7 @@
 .my-name {
     padding: 0 2rem;
     font-size: 44px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .profile__informations > span {
@@ -42,6 +43,12 @@
     font-size: 44px;
 }
 
+.cv-redes-socias {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
 .profile__imagem {
     width: 50%;
@@ -51,8 +58,9 @@
     padding: 0 8rem;
     justify-content: center;
     border-radius: 50%;
-
+    animation: photo 4s linear infinite
 }
+
 
 .imagem-profile {
     max-width: 100%;
@@ -83,6 +91,16 @@
     .container__profile {
         margin-top: 3rem;
     }
-
-
 }
+
+
+@keyframes photo {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+}
+
+

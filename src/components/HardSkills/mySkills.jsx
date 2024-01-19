@@ -2,136 +2,73 @@
 // MEU CSS
 import './styleSkills.css';
 
+// ICONS
+import {IoLogoJavascript} from 'react-icons/io5';
+import {FaReact} from 'react-icons/fa';
+import {FaAngular} from 'react-icons/fa';
+import {FaNode} from 'react-icons/fa';
+
+
+
 // IMPORTE DA ANIMAÇÃO
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
 
-function HardSkills() {
 
 
 
-    //ANIMAÇÃO DE SCROLL DAS MINHAS HARDsKILLS
+export const HardsSkills = () => {
+
+
+    const titleH2Ref = useRef(null);
+    const titleJavascriptRef = useRef(null);
+    const titleReactRef = useRef(null);
+    const titleAngularRef = useRef(null);
+    const titleNodeRef = useRef(null);
+
+
+
+
+
+
     useEffect(() => {
 
-
-        gsap.fromTo('.title-hardSkills', {
-            opacity: 0,
-            y: -100
-        }, {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            scrollTrigger: {
-                trigger: '.dad-HardSkills',
-                start: 'top 80% center',
-                end: 'bottom center',
-            }
-        })
+        const h2 = titleH2Ref.current;
+        const javascript = titleJavascriptRef.current;
+        const react = titleReactRef.current;
+        const angular = titleAngularRef.current;
+        const node = titleNodeRef.current;
 
 
-
-        gsap.fromTo('.hardSkill__Javascript', {
-            opacity: 0,
-            x: -100,
-        }, {
-            opacity:1,
-            x: 0,
-            duration:1.5,
-            scrollTrigger: {
-                trigger: '.dad-HardSkills',
-                start: 'top 80% center',
-                end: 'bottom center',
-            }
-        },
-
-        gsap.fromTo('.hardSkill__React', {
-            opacity: 0,
-            y: 100,
-        }, {
-            opacity:1,
-            y: 0,
-            duration:1.8,
-            scrollTrigger: {
-                trigger: '.dad-HardSkills',
-                start: 'top 80% center',
-                end: 'bottom center',
-            }
-        },
-
-        gsap.fromTo('.hardSkill__Angular', {
-            opacity: 0,
-            y: -100,
-        }, {
-            opacity:1,
-            y: 0,
-            duration:2.2,
-            scrollTrigger: {
-                trigger: '.dad-HardSkills',
-                start: 'top 80% center',
-                end: 'bottom center',
-            }
-        },
-
-        gsap.fromTo('.hardSkill__NodeJs', {
-            opacity: 0,
-            x: 100,
-        }, {
-            opacity:1,
-            x: 0,
-            duration:2.5,
-            scrollTrigger: {
-                trigger: '.dad-HardSkills',
-                start: 'top 80% center',
-                end: 'bottom center',
-            }
-
-        })))
-
-        )
-    } );
+        function animarHardSkills(element, startX, startY, endX, endY, inicio, time) {
+            gsap.fromTo(element, {
+                opacity: 0,
+                x: startX,
+                y: startY,
+            }, {
+                opacity: 1,
+                x:endX ,
+                y:endY ,
+                duration: time,
+                scrollTrigger: {
+                    trigger: inicio,
+                    start: "top center",
+                    bottom: "bottom center",
+                }
+            })
+        }
 
 
-
-
-
-
-
-
-
-
-
-    return(
-    <>
-        <h2 className='title-hardSkills'>Hard Skills</h2>
-    <div className='dad-HardSkills'>
-    <div className='container_hardSkills'>
-        <div className='hardSkill__Javascript'>
-            <img src='https://bognarjunior.files.wordpress.com/2018/01/1crcyaithv7aiqh1z93v99q.png' className='gp-img-skills' alt='' title='Minhas HardsSkills em Javascript' />
-            <p>JavaScript</p>
-            <span className='gp-description-skills'>Com sólido conhecimento em JavaScript, traduzo conceitos complexos em código coeso, oferecendo dinamismo e interatividade para otimizar a experiência do usuário na web.</span>
-
-        </div>
-        <div className='hardSkill__React'>
-            <img src='https://bognarjunior.files.wordpress.com/2018/03/if_react-js_logo_1174949.png' className='gp-img-skills' alt='' title='Minhas HardsSkills em React' />
-            <p>React</p>
-            <span className='gp-description-skills'>Especializado em React, desenvolvo interfaces que combinam elegância e eficiência, proporcionando experiências visuais cativantes e funcionais. <br /><br /> Essa Page e esse Card foi desenvolvida em React</span>
-        </div>
-        <div className='hardSkill__Angular'>
-            <img src='https://images.prismic.io/blogadevindev/58129589-de25-4254-99a9-507859e01db4_angular-logo.png?auto=compress,format' className='gp-img-skills' alt='' title='Minhas HardsSkills em Angular' />
-            <p>Angular 17</p>
-            <span className='gp-description-skills'>Conhecedor do Angular, orquestro o desenvolvimento de aplicações complexas, unindo estrutura sólida e inovação para alcançar resultados excepcionais.</span>
-        </div>
-        <div className='hardSkill__NodeJs'>
-            <img src='https://chris-noring.gallerycdn.vsassets.io/extensions/chris-noring/node-snippets/1.3.3/1636325666317/Microsoft.VisualStudio.Services.Icons.Default' className='gp-img-skills' alt='Imagem de NodeJs' title='Minhas HardsSkills em NodeJs' />
-            <p>Node Js 20.0</p>
-            <span className='gp-description-skills'>Conhecimento sólido em Node.js, construo servidores robustos que impulsionam aplicações, assegurando desempenho e eficiência notáveis em ambientes de produção.</span>
-        </div>
-    </div>
-
-    </div>
+        //  CHAMADA DAS ANIMAÇÕES
+        animarHardSkills(h2, -200, 0, 0, 0, '.title-hardSkills', 0.5);
+        animarHardSkills(javascript, -200, -200, 0, 0, '.title-hardSkills', 0.75);
+        animarHardSkills(react, 0, 200,0 ,0, '.title-hardSkills', 0.95);
+        animarHardSkills(angular, 0, -200,0, 0, '.title-hardSkills', 1.1);
+        animarHardSkills(node, 200, -200,0,0, '.title-hardSkills', 1.3);
+    })
 
 
 
@@ -145,9 +82,36 @@ function HardSkills() {
 
 
 
-    </>
-    )
-  }
 
+  return (
+   <>
+   <h2 className='title-hardSkills' ref={titleH2Ref}>Hard Skills</h2>
+<div className='dad-HardSkills'>
+<div className='container_hardSkills'>
+  <div className='hardSkill__Javascript' ref={titleJavascriptRef}>
+      <IoLogoJavascript size={120} color='yellow' />
+      <p>JavaScript</p>
+      <span className='gp-description-skills'>Com sólido conhecimento em JavaScript, traduzo conceitos complexos em código coeso, oferecendo dinamismo e interatividade para otimizar a experiência do usuário na web.</span>
 
-  export default HardSkills;
+  </div>
+  <div className='hardSkill__React' ref={titleReactRef}>
+    <FaReact size={120} color='#00FFFF' />
+      <p>React</p>
+      <span className='gp-description-skills'>Especializado em React, desenvolvo interfaces que combinam elegância e eficiência, proporcionando experiências visuais cativantes e funcionais. <br /><br /> Essa Page e esse Card foi desenvolvida em React</span>
+  </div>
+  <div className='hardSkill__Angular' ref={titleAngularRef}>
+    <FaAngular size={120} color='red' />
+      <p>Angular 17</p>
+      <span className='gp-description-skills'>Conhecedor do Angular, orquestro o desenvolvimento de aplicações complexas, unindo estrutura sólida e inovação para alcançar resultados excepcionais.</span>
+  </div>
+  <div className='hardSkill__NodeJs' ref={titleNodeRef}>
+    <FaNode size={120} color='green' />
+      <p>Node Js 20.0</p>
+      <span className='gp-description-skills'>Conhecimento sólido em Node.js, construo servidores robustos que impulsionam aplicações, assegurando desempenho e eficiência notáveis em ambientes de produção.</span>
+  </div>
+</div>
+
+</div>
+   </>
+  )
+}

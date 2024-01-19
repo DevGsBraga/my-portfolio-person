@@ -2,6 +2,14 @@
 import './styleProject1.css';
 import gsap from 'gsap';
 import { useEffect, useRef } from 'react';
+
+// ICONS
+import {TiHtml5} from 'react-icons/ti';
+import {FaCss3Alt} from 'react-icons/fa';
+import {IoLogoJavascript} from 'react-icons/io5';
+
+
+
 import Button from '../../Buttons/Button';
 
 
@@ -16,7 +24,7 @@ export const CardProject = () => {
   const animationTechRef = useRef(null);
 
   useEffect(() => {
-   const timeLine = gsap.timeline({delay: .5})
+   const timeLine = gsap.timeline({duration: 0.50})
 
 
 
@@ -64,6 +72,7 @@ export const CardProject = () => {
 
 
     //  FUNÇÃO PARA DESFOCAR MINHA IMAGEM
+
     const butao = document.getElementById('btn-project');
     const imgDesfocada = document.querySelector('.photo-project');
     butao.addEventListener('mouseover', () => {
@@ -72,8 +81,17 @@ export const CardProject = () => {
     butao.addEventListener('mouseout', () => {
       imgDesfocada.classList.remove('defoque');
     })
-
   })
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,20 +111,20 @@ export const CardProject = () => {
           <p className='description-text' >O projeto consiste em desenvolver uma aplicação ou script que utilize a API do GitHub para buscar dinamicamente os repositórios públicos de um usuário específico. A aplicação deve permitir autenticação, consulta à API para obter informações sobre os repositórios, e exibição dos resultados de forma interativa. O objetivo é criar uma ferramenta que atualize dinamicamente a lista de repositórios conforme o usuário interage com a aplicação.</p>
         </div>
         <div className='user-skills' ref={animationTechRef}>
-          <img src="https://blog.brwiki.com.br/img/html-js-css.png" alt="" className='gp-img-project'/>
-
+          <TiHtml5 size={40} color='#21697A' />
+          <FaCss3Alt size={40} color='#21697A' />
+          <IoLogoJavascript size={40} color='#21697A' />
+          <Button title={'Repositório'} link={'https://github.com/DevGsBraga/GitFind'} id={'btn-project'}></Button>
         </div>
       </div>
 
       <div className='container-right' >
         <div className='container-aling' ref={animationImgref}>
-          <img src='https://github.com/DevGsBraga/GitFind/blob/main/src/assets/projeto.jpg?raw=true'  alt="" className='photo-project' />
+          <img src='https://github.com/DevGsBraga/GitFind/blob/main/src/assets/projeto.jpg?raw=true'  alt="Projeto GitFind" className='photo-project' />
         </div>
-          <Button title={'Repositório'} link={'#'} id={'btn-project'}></Button>
+
         </div>
       </div>
-
-
   )
 }
 

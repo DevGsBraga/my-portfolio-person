@@ -1,3 +1,9 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
 .dad-HardSkills {
     width: 100vw;
     height: 100vh;
@@ -14,7 +20,7 @@
 .title-hardSkills {
     color: white;
     text-align: center;
-    margin-top: 15rem ;
+    margin-top: 10rem ;
     font-size: 2em;
 }
 
@@ -38,69 +44,72 @@
     width: 277px;
     height: 52vh;
     /* max-height: 75vh; */
-    padding: 1rem 0;
+    padding: .7rem;
     text-align: center;
-    background-color: rgba(36, 36, 36, 0.411);
-    box-shadow:  5px 5px 10px #1b7a76,
+    background: #333333f3;
+    box-shadow:  5px 5px 10px #d0ff00,
              -5px -5px 10px #313131;
     border-radius: 1rem;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+
 }
 
 .hardSkill__Javascript p {
-    color: rgb(217, 255, 0);
+    color: #d9ff00;
     padding: .7rem 0;
+    font-weight: bold;
 }
 .hardSkill__React {
     width: 277px;
     height: 52vh;
     /* max-height: 75vh; */
-    padding: 1rem 0;
+    padding: .7rem;
     text-align: center;
-    background-color: rgba(36, 36, 36, 0.411);
-    box-shadow:  5px 5px 10px #1b7a76,
+    background: #333333f3;
+    box-shadow:  5px 5px 10px #00fcfc,
              -5px -5px 10px #313131;
     border-radius: 1rem;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+
 }
 
 .hardSkill__React p{
     color: rgb(0, 255, 255);
     padding: .7rem 0;
+    font-weight: bold;
 }
 .hardSkill__Angular {
     width: 277px;
     height: 52vh;
     /* max-height: 75vh; */
-    padding: 1rem 0;
+    padding: .7rem;
     text-align: center;
-    background-color: rgba(36, 36, 36, 0.411);
-    box-shadow:  5px 5px 10px #1b7a76,
+    background: #333333f3;
+    box-shadow:  5px 5px 10px #ff0000,
              -5px -5px 10px #313131;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
     border-radius: 1rem;
+
+
 }
 
 .hardSkill__Angular p{
     color: rgb(255, 17, 0);
     padding: .7rem 0;
+    font-weight: bold;
 }
 .hardSkill__NodeJs {
     width: 277px;
     height: 52vh;
     /* max-height: 75vh; */
-    padding: 1rem 0;
+    padding: .7rem;
     text-align: center;
-    background-color: rgba(36, 36, 36, 0.411);
-    box-shadow: 5px 5px 10px #1b7a76,
+    background: #333333f3;
+    box-shadow: 5px 5px 10px #2bff00,
     -5px -5px 10px #313131;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
     border-radius: 1rem;
-}
 
-
-.gp-img-skills {
-    width: 40%;
 }
 
 
@@ -111,6 +120,7 @@
 .hardSkill__NodeJs p{
     color: rgb(4, 143, 34);
     padding: .7rem 0;
+    font-weight: bold;
 }
 
 .hardSkill__Javascript,
@@ -130,8 +140,21 @@
 .hardSkill__React:hover,
 .hardSkill__Angular:hover,
 .hardSkill__NodeJs:hover {
-    box-shadow: 3px 3px 35px rgb(17, 84, 88);
+    box-shadow: 3px 3px 35px rgb(55, 59, 59);
 }
+
+
+/* ANIMAÇÕES */
+
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
 
 
 
